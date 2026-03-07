@@ -1,99 +1,239 @@
+/* GLOBAL STYLE */
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.navbar-brand{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-link{
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #ffc107 !important;
+}
+
+
+/* BANNER */
+
 .banner{
     min-height: 100vh;
     background-image:
-        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url("steak.jpg");
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("image/steak.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+}
+
+.banner h1{
+    font-weight: bold;
+}
+
+.banner h2{
+    font-size: 1.5rem;
+}
+
+
+/* PRODUK BANNER */
+
+.produk-banner{
+    height: 50vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("image/steak.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* CARD STYLE */
+
+.card{
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+
+/* BUTTON */
+
+.btn-warning{
+    transition: 0.3s;
+}
+
+.btn-warning:hover{
+    background-color: #ffb300;
+}
+
+
+/* SERVICE SECTION */
+
+.background-service{
+    background: linear-gradient(135deg,#343a40,#495057);
 }
 
 .icon-service{
     width: 90px;
     height: 90px;
-    border: solid #fff 2px;
+    border: 2px solid #fff;
     border-radius: 50%;
-    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.3s;
 }
 
-.background-service{
-    height: auto;
-    background-color: rgb(109, 109, 109);
+.icon-service:hover{
+    background-color: #ffc107;
+    color: black;
 }
 
-/*Review*/
-.testimony {
-    background-color: rgb(155, 0, 155) !important;
+
+/* REVIEW SECTION */
+
+.testimony{
+    background: linear-gradient(135deg,#6f00ff,#9b009b);
 }
 
-.testimony-card {
-    background: rgba(255, 255, 255, 0.07) !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+.testimony-card{
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
     border-radius: 16px;
     padding: 28px;
-    transition: .3s;
-    height: 100%;
+    transition: 0.3s;
 }
 
-.testimony-card:hover {
+.testimony-card:hover{
     transform: translateY(-6px);
-    background: rgba(255, 255, 255, 0.13);
-    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255,255,255,0.12);
 }
 
-.testimony-card .quote-icon {
-    font-size: 2rem;
-    color: rgba(255, 255, 255, 0.3);
-    line-height: 1;
-    margin-bottom: 10px;
+.testimony-card h5{
+    color: white;
 }
 
-.testimony-card h5 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 4px;
+.testimony-card p{
+    color: rgba(255,255,255,0.8);
 }
 
-.testimony-card .author {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.55);
-    margin-bottom: 12px;
+.stars{
+    color: #ffc107;
 }
 
-.testimony-card p {
-    font-size: 0.88rem;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.6;
-    margin-bottom: 0;
-}
 
-.testimony-card .stars {
-    color: #FFC107;
-    font-size: 0.85rem;
-    margin-bottom: 12px;
-}
+/* SUBSCRIBE */
 
-/*Subscribe*/
-.container-fluid-bg {
+.subs {
     background-color: #595959;
 }
 
-.footer .social-icon {
+.social-icon{
     font-size: 1.6rem;
-    color: #fff;
-    transition: .3s;
+    color: white;
+    transition: 0.3s;
 }
 
-.footer .social-icon-banner:hover {
-    color: #FFC107;
+.social-icon:hover{
+    color: #ffc107;
+    transform: scale(1.2);
 }
 
-/*Footer*/
-.p {
-    font-size: small;
+
+/* FOOTER */
+
+.footer{
+    background-color: black;
 }
 
-.ul {
-    list-style-type: none;
+.footer a{
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: #ffc107;
+}
+
+
+/* PAGINATION */
+
+.pagination .page-link{
+    color: #333;
+    border-radius: 8px;
+}
+
+.pagination .page-link:hover{
+    background-color: #ffc107;
+    color: white;
+}
+
+
+/* CATEGORY MENU */
+
+.list-group-item{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.list-group-item:hover{
+    background-color: #ffc107;
+    color: white;
+}
+
+
+/* INPUT GROUP */
+
+.input-group input{
+    border-radius: 8px 0 0 8px;
+}
+
+.input-group button{
+    border-radius: 0 8px 8px 0;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+.banner h1{
+    font-size: 1.8rem;
+}
+
+.banner h2{
+    font-size: 1rem;
+}
+
+.card img{
+    height: 180px;
+}
+
 }
